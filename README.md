@@ -1,5 +1,7 @@
 # Blabber
 
+Based heavily off of https://github.com/chentsulin/electron-react-boilerplate thanks!
+
 ## Install
 
 Install dependencies.
