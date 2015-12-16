@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic|Titillium+Web:400,400italic,600,600italic,300italic,300,700);
+
+@import './style/reset';
+@import './style/variables';
+@import '../node_modules/bourbon/app/assets/stylesheets/_bourbon';
+@import '../node_modules/bourbon-neat/app/assets/stylesheets/_neat.scss';
+@import './style/typography';
+
+.container, #root {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  overflow-y: hidden;
+  margin: 0;
+}
+

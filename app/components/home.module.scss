@@ -1,0 +1,14 @@
+@import '../style/imports';
+
+.main {
+  @include display(flex);
+  @include flex-flow(row nowrap);
+  @include flex(1);
+  height: 100%;
+}
+
+.innerView {
+  @include flex(1);
+  @include display(flex);
+  @include flex-flow(column nowrap);
+}

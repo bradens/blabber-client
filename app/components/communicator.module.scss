@@ -1,0 +1,48 @@
+@import '../style/imports';
+
+$border: 1px solid #ddd;
+$blue: #3498db;
+
+.communicator {
+  @include display(flex);
+  @include flex-flow(row nowrap);
+  @include align-self(flex-end);
+  @include flex(0);
+  @include flex-shrink(0);
+  width: 100%;
+  height: 40px;
+}
+
+.input {
+  @include flex(1);
+  @include appearance(none);
+  border-top: $border;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  font-size: 1em;
+  padding: 0 .5em;
+  font-family: $base-font-family;
+
+  &:focus {
+    outline: none;
+    border-top-color: $blue;
+  }
+}
+
+.send {
+  @include appearance(none);
+  @include flex-basis(50px);
+  background-color: $blue;
+  font-family: $base-font-family;
+  border: none;
+  color: #f5f5f5;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    background-color: darken($blue, 10%);
+  }
+}
